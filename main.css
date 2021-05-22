@@ -1,0 +1,61 @@
+.flex-container {
+    display: flex;
+    margin: 20px 0 0 0;
+  }
+  .flex-container div {
+   flex: 1; 
+  }
+  .flex-container a {
+  color: blueviolet;
+  }
+  .container {
+    background-image: url(https://amplino.org/wp-content/uploads/-000//1/paisagem-maravilhosa-wallpaper.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px; 
+  }
+  .login-form {
+    background: rgb(255, 255, 255, 0.6);
+    padding: 30px;
+    width: 400px;
+  }
+  input[type="text"], [type="password"] {
+    padding: 8px 15px;
+    font-size: 16px;
+  }
+  input[type="button"] {
+    width: 400px;
+    padding: 10px;
+    background-color: blueviolet;
+    border-style: none;
+    color: white;
+    font-size: 15px;
+  }
+  input[type="button"]:hover {
+    cursor: pointer;
+    background-color: rgb(118, 43, 226);
+  }
+  .flex-input {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+  label {
+    flex-basis: 130px;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  
+  @media all and (max-width: 500px) {
+    .flex-input {
+      flex-direction: column
+    }
+    label {
+      flex-basis: 0;  
+    }
+    .container{
+    background-size: 1500px;
+    }
+  }
